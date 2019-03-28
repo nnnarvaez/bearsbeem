@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
-default_prefix = "STM"
+default_prefix = "BEA"
 known_chains = {
     "STEEMAPPBASE": {
         "chain_id": "0" * int(256 / 4),
@@ -84,6 +84,16 @@ known_chains = {
             {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
+    "EFTGAPPBASE": {
+        "chain_id": "1c15984beb16945c01cb9bc3d654b0417c650461dfe535018fe03a4fc5a36864",
+        "min_version": "0.19.12",
+        "prefix": "EUR",
+        "chain_assets": [
+            {"asset": "@@000000013", "symbol": "EUR", "precision": 3, "id": 0},
+            {"asset": "@@000000021", "symbol": "EFTG", "precision": 3, "id": 1},
+            {"asset": "@@000000037", "symbol": "VESTS", "precision": 6, "id": 2}
+        ],
+    },
     "EFTG": {
         "chain_id": "1c15984beb16945c01cb9bc3d654b0417c650461dfe535018fe03a4fc5a36864",
         "min_version": "0.19.6",
@@ -103,23 +113,15 @@ known_chains = {
             {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
         ],
     },
-    "SMOKE": {
-        "chain_id": "1ce08345e61cd3bf91673a47fc507e7ed01550dab841fd9cdb0ab66ef576aaf0",
-        "min_version": "0.0.0",
-        "prefix": "SMK",
-        "chain_assets": [
-            {"asset": "STEEM", "symbol": "SMOKE", "precision": 3, "id": 1},
-            {"asset": "VESTS", "symbol": "VESTS", "precision": 6, "id": 2}
-        ],
-    },
-    "BEATSHARES": {
+    "BEARS": {
         "chain_id": "b510834141c312c2aa8837040734605f2333f1ecc4f634576372f9c12dc7e8b2",
         "min_version": "0.0.0",
-        "prefix": "SMK",
+        "prefix": "SHR",
         "chain_assets": [
-            {"asset": "BEARS", "symbol": "BEARS", "precision": 3, "id": 1},
-            {"asset": "VESTS", "symbol": "COINS", "precision": 6, "id": 2}
-            {"asset": "BSD", "symbol": "BSD", "precision": 3, "id": 0}
-    },
+            {"asset": "@@000000013", "symbol": "BSD", "precision": 3, "id": 0},
+            {"asset": "@@000000021", "symbol": "BEARS", "precision": 3, "id": 1},
+            {"asset": "@@000000037", "symbol": "COINS", "precision": 6, "id": 2}
 
+        ],
+    },    
 }
