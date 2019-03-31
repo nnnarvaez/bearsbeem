@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
-default_prefix = "BEA"
+default_prefix = "SHR"
 known_chains = {
     "STEEMAPPBASE": {
         "chain_id": "0" * int(256 / 4),
